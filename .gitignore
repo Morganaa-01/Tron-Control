@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.venv/
+*.pcd
+*.bag
+*.active
+*.log
+*.zip
+settings.json
+.env
+*.pem

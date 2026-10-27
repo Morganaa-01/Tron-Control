@@ -1,0 +1,44 @@
+Panels:
+  - Class: rviz/Displays
+    Name: Displays
+Visualization Manager:
+  Class: ""
+  Global Options:
+    Fixed Frame: __FRAME__
+    Background Color: 24; 28; 36
+    Frame Rate: 20
+  Displays:
+    - Class: rviz/Grid
+      Name: Grid
+      Enabled: true
+      Cell Size: 1
+      Plane: XY
+      Reference Frame: <Fixed Frame>
+    - Class: rviz/PointCloud2
+      Name: TRON1 live map
+      Enabled: true
+      Topic: /cloud_registered
+      Queue Size: 2
+      Style: Points
+      Size (Pixels): 2
+      Color Transformer: Intensity
+      Position Transformer: XYZ
+      Decay Time: 5
+  Views:
+    Current:
+      Class: rviz/Orbit
+      Distance: 15
+      Focal Point:
+        X: 0
+        Y: 0
+        Z: 0
+      Pitch: 0.7
+      Yaw: 0.8
+      Target Frame: <Fixed Frame>
+  Tools:
+    - Class: rviz/Interact
+    - Class: rviz/MoveCamera
+    - Class: rviz/Select
+Window Geometry:
+  Width: 1100
+  Height: 750
